@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sign up</title>
+        <link rel="stylesheet" href="form.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <h3>Manje lakay</h3>
+                <h6>Cuisine Haitienne</h6>
+            </div>
+            <input id="button" class="button" type="checkbox">
+            <label for="button" class="burger">
+                <span><i class="fas fa-bars"></i></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.html">Receta</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="form.html">Registrarse</a></li>
+                </ul>
+            </nav>                
+        </header>
+        <div class="container">
+            <div class="formulario">
+                <form action="">
+                    <div class="title_form">
+                        <h1>Formulario</h1>
+                    </div>
+                    <div class="form">
+                        <div class="input_field">
+                            <label for="first_name">Nombre</label>
+                            <input type="text" class="input" id="first_name" name="first_name" placeholder="Ingrese tu nombre">
+                        </div>
+
+                        <div class="input_field">
+                            <label for="lastname">Apellido</label>
+                            <input type="text" class="input" id="last_name" placeholder="Ingrese tu apellido">
+                        </div>
+
+                        <div class="input_field">
+                            <label for="sexo">Sexo</label>
+                            <input name="sexo" type="radio" value="Hombre"/>
+                            <label for="sexo">Hombre</label>
+                            <input name="sexo" type="radio" value="Mujer" />
+                            <label for="sexo">Mujer</label>
+                        </div>
+
+                        <div class="input_field">
+                            <label for="direction">Direction</label>
+                            <input type="text" class="input" id="direction" name="direction" placeholder="Av. Cerviño">
+                        </div>
+
+                        <div class="input_field">
+                            <label for="num">Nro</label>
+                            <input type="text" class="input" name="num" id="num" placeholder="1426">
+                        </div>
+
+                        <div class="input_field">
+                            <label for="piso">Piso</label>
+                            <input type="number" class="input" id="piso" name="piso" placeholder="5">
+                        </div>
+
+                        <div class="input_field">
+                            <label for="depto">Depto</label>
+                            <input type="text" class="input" id="depto" name="depto" placeholder="A">
+                        </div>
+
+                        <div class="input_field">
+                            <label for="city">Ciudad</label>           <input type="text" name="city"      id="city" placeholder="C.A.B.A." class="input" >
+                        </div>
+
+                        <div class="input_field">
+                            <label for="zipcode">Código Postal</label> <input type="text" name="zipcode"   id="zipcode" placeholder="1425" class="input" >
+                        </div>
+
+                        <div class="input_field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email"class="input"   placeholder="obei@gmail.com">
+                        </div>
+
+                        <div class="input_field">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" class="input"  minlength="8" required>
+                        </div>
+
+                        <div class="input_field">
+                            <label for="pass">Confirm Password</label>
+                            <input type="password" id="pass" name="pass" class="input"  minlength="8" required><br>
+                        </div>
+
+                        <div class="submit">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <footer>
+                <div class="foot-content">
+                    <div class="left box">
+                        <h2>Nosotros</h2>
+                        <div class="content">
+                            <p>
+                                Soy Esther, una desarrolladora de sitios web pero también una amante de la cocina haitiana. Decidí fusionar mis pasiones para compartir mis conocimientos en desarrolladora y cocinera a través de un sitio de cocina. Epero que te guste. Para otras recetas no duden en contactarme
+                            </p>
+                            <div class="social">
+                                <a href="#"><span ><i class="fab fa-instagram"></i></span></a>
+
+                                <a href="#"><i class="fab fa-youtube-square"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center box">
+                        <h2>Direccion</h2>
+                        <div class="content">
+                            <div class="place">
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <span class="text">Av. Cerviño 3296, palermo, CABA</span>
+                            </div>
+                            <div class="phone">
+                                <span><i class="fas fa-phone"></i></span>
+                                <span class="text">+549 1134894572</span>
+                            </div>
+                            <div class="text">
+                                <span><i class="fas fa-envelope"></i></span>
+                                <span class="tex">obeiwiljephnie@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right box">
+                        <h2>Contactarnos</h2>
+                        <div class="content">
+                            <form action="">
+                                <div class="email">
+                                    <div class="text">Email *</div>
+                                        <input type="email" required>
+                                    
+                                    <div class="msg"> 
+                                        <div class="text">Message *</div>
+                                        <textarea name="" id="" cols="15" rows="2"></textarea>
+                                    </div>
+                                    <div class="btn">
+                                        <button type="">Enviar</button>
+                                    </div>
+                                    <!-- <center>
+                                        <span class="credit"> Created By <a href="#">Esther Obéi</a> | </span>
+                                        <i class="far fa-copyright"></i><span>2020 All rights reserved</span>
+                                    </center> -->
+                                    
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+    </body>
+
+</html>

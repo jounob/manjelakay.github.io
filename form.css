@@ -19,7 +19,7 @@ header {
     position: fixed;
     /* text-align: center; */
     background-color: #003844;
-
+    z-index: 3;
     
 }
 .button{
@@ -112,7 +112,7 @@ nav a:hover {
     align-items: flex-start;
     position: relative;
     top: 80px;
-    z-index: -4;
+    z-index: 1;
     margin-bottom: 250px;
     /* text-shadow: 2px 2px 4px rgba(206, 120, 63, 0.658); */
 }
@@ -166,7 +166,7 @@ footer{
     bottom: 0px;
     width: 100%;
     background: #003844;
-    
+    z-index: 3;
 }
 .foot-content{
     /* height: 250px;

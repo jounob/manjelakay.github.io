@@ -19,9 +19,13 @@ header {
     position: fixed;
     /* text-align: center; */
     background-color: #003844;
-    z-index: 3;
-    
+    z-index: 3;   
 }
+
+a{
+    text-decoration: none;
+}
+
 .button{
     display: none;
 }
@@ -256,8 +260,6 @@ footer{
 }
 .center .content .phone{
     margin: 15px 0;
-    /* font-size: 18px; */
-    /* font-weight: 500; */
     color: #f0f5de;
 }
 .right form .msg{

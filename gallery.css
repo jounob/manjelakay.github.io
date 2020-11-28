@@ -17,10 +17,13 @@ header {
     width: 100%;
     position: fixed;
     /* text-align: center; */
-    background-color: #003844;
-
-    
+    background-color: #003844; 
 }
+
+a{
+    text-decoration: none;
+}
+
 .button{
     display: none;
 }

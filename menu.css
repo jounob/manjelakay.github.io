@@ -26,6 +26,10 @@ header {
 
     
 }
+a{
+    text-decoration: none;
+}
+
 .button{
     display: none;
 }

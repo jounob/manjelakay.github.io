@@ -14,51 +14,50 @@ body{
  
 header {
     width: 100%;
+    min-width: 300px;
     position: fixed;
-    /* text-align: center; */
-    background-color: #003844;
-
-    
+    background-color: #003844;   
 }
+
 .button{
     display: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .title{
     color: #ff9a5b;
-    /* font-family: "Playlist"; */
     display: flex;
-    height: 80px;
+    height: 100px;
+    width: 150px;
+    margin-left: 25px;
     flex-direction: column;
     justify-content: center; 
-    align-content: flex-start;  
-    width: 150px; 
+    align-content: flex-start; 
     text-align: center;
 }
 h3{
     font-family: "Playlist";
-    font-size: 30px;
+    font-size: 32px;
 }
 h6{
     font-family: Arial, Helvetica, sans-serif;
-
+    font-size: 13px;
 }
-/* .img_logo{
-    display: flex;
-    width: 100px;
-    height: 80px;
-    margin-left: 50px;
-}  */
+
 nav ul {
     position: fixed;
     width: 100%;
     height: 100vh;
-    padding: 16px;
+    padding: 40px 16px 16px 16px;
     left: -100%;
     transition: all .5s;
     list-style: none; 
     background: #003844; 
-    text-align: center; 
+    text-align: center;
+    line-height: 2.5em;    
 }
 /* #FA7902 */
 nav li {
@@ -68,7 +67,7 @@ nav li {
 nav a {
     color: #ff9a5b;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     text-shadow: 2px 2px 4px rgba(206, 120, 63, 0.658);
     text-transform: uppercase;
 }
@@ -81,7 +80,7 @@ nav a:hover {
 }
 .burger{
     position: absolute;
-    font-size: 35px;
+    font-size: 40px;
     color: #ff9a5b;
     text-shadow: 2px 2px 4px rgba(176, 120, 97, 0.658);
     top: 0;
@@ -91,153 +90,167 @@ nav a:hover {
     display: flex;
     align-items: center;
 }
- .container{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; */
-} 
+ 
 
 /* Slider */
 .slidershow{
-    align-self: center;
-    width: 750px;
-    height: 450px;
-    overflow: hidden;
-    z-index: -1;
-}
-.middle {
     position: absolute;
+    width: 95%;
+    height: 35%;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: -1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
-.navigation {
+
+.navigation{
+    display:flex;
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
-    
 }
-.bar {
+
+.bar{
     width: 50px;
     height: 10px;
     border: 2px solid #ecfeaa;
-    opacity: 0.2;
-    margin: 6px;
+    opacity: 0.4;
+    margin: 5px;
     cursor: pointer;
 }
+
 .bar:hover{
     background: #c9f299;
 }
+
 input[name="sld"]{
-    position: absolute;
     visibility: hidden;
+    position: absolute;
 }
+
 .slides{
     width: 500%;
     height: 100%;
     display: flex;
 }
+
 .slide{
     width: 20%;
-    transition: 0.6s;
+    transition: 0.3s;
 }
+
 .slide img{
+    width: 100%;
     height: 100%;
-    width: 100%; 
 }
+
 #slide1:checked ~ .s1{
     margin-left: 0;
 }
+
 #slide2:checked ~ .s1{
     margin-left: -20%;
 }
+
 #slide3:checked ~ .s1{
     margin-left: -40%;
 }
+
 #slide4:checked ~ .s1{
     margin-left: -60%;
 }
+
 #slide5:checked ~ .s1{
     margin-left: -80%;
 }
 
+/* Footer */ 
 
 footer{
     position: relative;
-    top: 700px;
+    top: 100vh;
     width: 100%;
+    justify-self: center;
     background: #003844;
+    z-index: -1;
 }
 .foot-content{
-    /* height: 250px;
-    max-height: 350px; */
     display: flex;
-    /* justify-content: center; */
+    flex-wrap: wrap;
+    flex-direction: column;
 }
+
 .foot-content .box{
     flex-basis: 50%;
     padding: 10px 20px;
+    margin: 5px 0;
 }
-.box h2{
+
+.box h2 {
     font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
-    color:#f0f5de;
+    color: #f0f5de
 }
+
 .box .content{
-    margin: 20px 0 0 0;  
+    margin: 20px 0 0 0;
     position: relative;
 }
-.box .content:before{
+
+.box .content:before {
     position: absolute;
     content: '';
     top: -10px;
     height: 2px;
     width: 100%;
     background: #222020;
-
 }
+
 .box .content:after{
     position: absolute;
     content: '';
+    top: -10px;
     height: 2px;
     width: 20%;
     background: #ff9a5b;
-    top: -10px;
 }
-.left .content p{
+
+.left .content p {
     text-align: justify;
-    /* font-size: 18px; */
-    color:#f0f5de;
+    color: #f0f5de;
+    font-size: 20px;
 }
-.left .content .social{
+
+.left .content .social {
     margin: 20px 0 0 0;
 }
-.left .content .social a{
+
+.left .content .social a {
     padding: 0 2px;
 }
+
 .left .content .social a i{
     height: 40px;
-    width:40px;
-    color:#ecfeaa;
-    background: #1a1a1a;
+    width: 40px;
+    color: #ecfeaa;
+    background-color: #1a1a1a;
     line-height: 40px;
     text-align: center;
     font-size: 18px;
     border-radius: 5px;
     transition: 0.3s;
 }
+
 .left .content .social a i:hover{
     background: #ff9a5b;
+    /* opacity: 0.8; */
 }
-/* .center .content{
-    margin-left: 10px;
-} */
-.center .content .fas{
+
+.center .content .fas {
     font-size: 1.4375rem;
     background: #1a1a1a;
     height: 45px;
@@ -245,63 +258,75 @@ footer{
     line-height: 45px;
     text-align: center;
     border-radius: 50%;
-    transition: 0.3s;
     cursor: pointer;
-    color: #f0f5de;
+    color: #ecfeaa;
+    transition: .3s;
 }
+
 .center .content .fas:hover{
-    background: #ff9a5b;  
+    background: #ff9a5b;
 }
-.center .content .text{
+
+.center .content .text {
     font-size: 1.0625rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #f0f5de;
     padding-left: 10px;
 }
+
 .center .content .phone{
     margin: 15px 0;
-    /* font-size: 18px; */
-    /* font-weight: 500; */
-    color: #f0f5de;
 }
+
 .right form .msg{
     margin-top: 10px;
 }
+
 .right form textarea{
-    height: 50px;
-}
-.right form input, .right form textarea{
-    width: 85%;
-    font-size: 1.0625rem;
-    background: #222020;
-    padding-left: 10px;
+    height: 80px;
+    resize: none;
     border: none;
 }
-.right form input:focus, .right form textarea:focus{
-    outline-color: #ff9a5b;
+
+.right form input, .right form textarea{
+    width: 65%;
+    font-size: 1.0625rem;
+    background: linear-gradient(to bottom, transparent, #222020) ;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    /* border-bottom: 3px solid #f0f5de; */
 }
+
+/* .right form input:focus, .right form textarea:focus{
+    outline-color: #ff9a5b ;
+} */
+
 .right form input{
     height: 35px;
 }
+.right form .text {
+     color: #1a1010; 
+     /* opacity: 0.6;    */
+}
+
 .right form .btn{
     margin-top: 10px;
 }
+
 .right form .btn button{
-    font-size: 1.0625;
-    /* font-weight: 500; */
+    font-size: 1.0625rem;
     background: #1a1a1a;
-    height: 40px;
-    width: 50%;
-    /* line-height: 45px; */
-    /* text-align: center; */
     border: none;
+    height: 40px;
+    width: 30%;
     outline: none;
-    transition: 0.3s;
     cursor: pointer;
     color: #f0f5de;
-    background-color: #ff9a5b;
-    cursor: pointer;
+    background: #ff9a5b;
+    transition: .3s;
 }
+
 .right form .btn button:hover{
     background: #222020;
 }
@@ -309,14 +334,7 @@ footer{
 
 
 
-
-
-
-
-
-
-
-@media screen and (min-width: 800px){
+@media screen and (min-width: 900px){
     .burger {
         display: none;
         visibility: hidden;
@@ -330,6 +348,7 @@ footer{
         grid-column: 3/4;
         justify-content: flex-end;
         align-items: center;
+        margin-right: 50px;
     }
     nav ul {
         all: unset;
@@ -341,44 +360,44 @@ footer{
         margin-right: 20px;
     }
     nav a {
-        font-size: 18px;
+        font-size: 25px;
     }
     .title{
         width: 250px;
+        height: 100px;
     }
     h3{
-        font-size: 25px;
+        font-size: 35px;
 
     }
     h6{
-        font-size: 10px;
+        font-size: 15px;
     }
-}
-@media screen and (max-width: 900px){
-    footer{
-        position: relative;
-        top: 100vh;
-        /* bottom:0px; */
-        
-    }
-    .foot-content{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .foot-content .box{
-        margin: 5px 0;
-    }
-}
-@media screen and (max-width: 350px){
-    .middle {
-        transform: none;
-        transition: none;
-        translate: none;
-        
-    }
+
+    /* slide responsive */
     .slidershow{
-        width: 750px;
-        height: 450px;
-        z-index: -1;
+        position: absolute;
+        width: 80%;
+        height: 75%;
+        margin-top: 60px;
+        overflow: hidden;
+        object-fit: cover;   
+    }
+
+    /* footer */
+    .foot-content{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 900px){
+    .slidershow{
+        position: absolute;
+        width: 85%;
+        height: 70%;
+        margin-top: 5%;
     }
 }
